@@ -3,7 +3,7 @@ import React from "react";
 import QuoteCard from "./QuoteCard";
 
 // An array of objects
-const quotes = [
+/*const quotes = [
   {
     quote:
       "Facts are meaningless. You could use facts to prove anything that's even remotely true.",
@@ -30,11 +30,11 @@ const quotes = [
     image:
       "https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FSeymourSkinner.png?1497567511460"
   }
-];
+];*/
 
-const QuoteList = () => (
+const QuoteList = props => (
   <div>
-    {quotes.map(item => (
+    {props.quotes.map(item => (
       <QuoteCard
         key={item.quote}
         quote={item.quote}
